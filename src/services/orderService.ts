@@ -1,3 +1,4 @@
+// service is going to connect the controller with the repositories
 import OrderRepository from '../repositories/orderRepository';
 import { CreationAttributes } from 'sequelize';
 import { injectable, inject } from 'tsyringe';

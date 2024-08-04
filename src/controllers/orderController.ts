@@ -1,9 +1,9 @@
 // src/controllers/ProductController.ts
-import { Request, Response } from 'express';
-import { container } from 'tsyringe';
-import OrderService from '../services/orderService';
+import { Request, Response } from 'express'; // We import request and response use to type
+import { container } from 'tsyringe'; // We import the instance of the service
+import OrderService from '../services/orderService'; // We import the service of order
 
-export default class OrderController {
+export default class OrderController { // We export as default the class that is going to contain the main services
     static async getAllOrders(req: Request, res: Response) {
         const orderService = container.resolve(OrderService);
         const orders = await orderService.getAllOrders();

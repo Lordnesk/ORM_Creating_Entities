@@ -1,3 +1,4 @@
+// Routes as usual
 import { Router } from 'express';
 import OrderController from '../controllers/orderController';
 
